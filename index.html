@@ -4,43 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<style>
-    body{
-        text-align: center;
-    }
-
-    #header{
-        background-color: darkslategray;
-        color: white;
-        margin-top: 5px;
-        margin-bottom: 20px;
-        padding: 1%;
-    }
-
-    .btn{
-        display: inline-block;
-    }
-
-    
-
-</style>
 
 <body>
 
-    <div>
-        <h1 id="header">Todo Application</h1>
-        <input type="text" id="val">
-        <button onclick="addTodo()">Add</button>
-        <button onclick="deleteAll()">Delete All</button>
-    </div>
+    <div id="header">
 
+        <h1 >Todo Application</h1>
+    </div>
+    <div>
+        
+        <input type="text" id="val">
+        <button onclick="addTodo()" class="btn">Add</button>
+        <button onclick="deleteAll()" class="btn">Delete All</button>
+    </div>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <div id="list-header">
+        <h1 >Todo List</h1>
+    </div>
     <div>
         <ul id="myList">
 
         </ul>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>

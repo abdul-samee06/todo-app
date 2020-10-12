@@ -10,6 +10,7 @@ function addTodo(){
 
     // adding value to the list
     var list_item = document.createElement("li");
+    list_item.setAttribute("class","list_items");
     var todo = document.createTextNode(val.value);
     list_item.appendChild(todo);
 
@@ -17,12 +18,14 @@ function addTodo(){
     var editBtn = document.createElement("button");
     var editText = document.createTextNode("Edit");
     editBtn.setAttribute("onclick","editTodo(this)");
+    editBtn.setAttribute("class","list_btn");
     editBtn.appendChild(editText);
 
     // creating delete button
     var deleteBtn = document.createElement("button");
     var deleteText = document.createTextNode("Delete");
-    deleteBtn.setAttribute("onclick","deleteTodo(this)")
+    deleteBtn.setAttribute("onclick","deleteTodo(this)");
+    deleteBtn.setAttribute("class","list_btn");
     deleteBtn.appendChild(deleteText);
 
 
